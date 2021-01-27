@@ -27,9 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-LOGIN_URL='login'
-LOGIN_RIDIRECT_URL='frontpage'
-LOGOUT_RIDIRECT_URL = 'frontpage'
+LOGIN_URL ='login'
+LOGIN_REDIRECT_URL ='frontpage'
+LOGOUT_RIDIRECT_URL = "/"
 # Application definition
 
 INSTALLED_APPS = [
@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'apps.core',
+    'crispy_forms',
+    'apps.job'
 ]
 
 MIDDLEWARE = [
